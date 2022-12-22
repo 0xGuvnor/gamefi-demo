@@ -14,7 +14,7 @@ const World = () => {
         className="flex flex-col mx-auto innerWidth"
       >
         <TypingText
-          title="| People around the World"
+          title="| Players around the World"
           textStyles="text-center"
         />
         <TitleText

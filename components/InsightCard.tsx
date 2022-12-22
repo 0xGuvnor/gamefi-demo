@@ -30,13 +30,17 @@ const InsightCard = ({ imgUrl, title, subtitle, index }: Props) => {
           </p>
         </div>
 
-        <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
+        <motion.div
+          whileHover={{ scale: 0.9 }}
+          whileTap={{ scale: 1.1 }}
+          className="lg:flex hidden items-center justify-center w-[100px] h-[100px] cursor-pointer rounded-full bg-transparent border-[1px]  border-white"
+        >
           <img
             src="/arrow.svg"
             alt="External link arrow"
             className="w-[40%] h-[40%] object-contain"
           />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

@@ -119,3 +119,41 @@ export const planetVariants = (direction: string) => ({
     transition: { type: "spring", duration: 2.2, delay: 0.5 },
   },
 });
+
+export const zoomIn = (delay: number, duration: number) => ({
+  hidden: {
+    scale: 0,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "tween",
+      delay,
+      duration,
+      ease: "easeOut",
+    },
+  },
+});
+
+export const footerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 250,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 80,
+      delay: 0.5,
+    },
+  },
+};

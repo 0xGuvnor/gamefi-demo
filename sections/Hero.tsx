@@ -13,14 +13,14 @@ const Hero = () => {
         className="flex flex-col mx-auto innerWidth"
       >
         <div className="relative z-10 flex flex-col items-center justify-center -ml-16">
-          <motion.h1 variants={textVariant(1)} className="heroHeading">
+          <motion.h1 variants={textVariant(0.8)} className="heroHeading">
             Metaverse
           </motion.h1>
-          <motion.h1 variants={textVariant(1.2)} className="heroHeading">
+          <motion.h1 variants={textVariant(1)} className="heroHeading">
             of
           </motion.h1>
           <motion.div
-            variants={textVariant(1.4)}
+            variants={textVariant(1.2)}
             className="flex items-center justify-center"
           >
             <h1 className="heroHeading">Ma</h1>
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
 
         <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
+          variants={slideIn("right", "tween", 0, 1)}
           className="relative w-full md:-mt-[225px] -mt-[69px]"
         >
           <div className="absolute inset-x-0 -top-[30px] w-full h-[300px] hero-gradient rounded-tl-[140px] z-0]"></div>
