@@ -13,10 +13,7 @@ const World = () => {
         viewport={{ amount: 0.25 }}
         className="flex flex-col mx-auto innerWidth"
       >
-        <TypingText
-          title="| Players around the World"
-          textStyles="text-center"
-        />
+        <TypingText title="| Players All Over World" textStyles="text-center" />
         <TitleText
           title={
             <>
